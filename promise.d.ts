@@ -69,5 +69,5 @@ export interface Pool extends EventEmitter {
 }
 
 export function createConnection(connectionUri: string): Connection;
-export function createConnection(config: ConnectionOptions): Promise<Connection>;
+export function createConnection(config: ConnectionOptions): Connection;
 export function createPool(config: PoolOptions): Pool;
