@@ -68,6 +68,6 @@ export interface Pool extends EventEmitter {
     end(): Promise<void>;
 }
 
-export function createConnection(connectionUri: string): Promise<Connection>;
+export function createConnection(connectionUri: string): Connection;
 export function createConnection(config: ConnectionOptions): Promise<Connection>;
 export function createPool(config: PoolOptions): Pool;
